@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/england_wallpaper"
+    android:weightSum="9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:alpha="0.85"
+            android:text="Menu Główne"
+            android:layout_weight="0.6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:alpha="0.85"
+            android:text="Poprzednie"
+            android:layout_weight="1.5"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7">
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="300dp"
+                android:text="Category Word"
+                android:textSize="22dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:id="@+id/textView"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_window_bg"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bgmenu_nine"
+                android:gravity="center"
+                android:text="1/4"
+                android:id="@+id/textView2"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignTop="@+id/textView"
+                android:layout_alignRight="@+id/textView"
+                android:layout_alignEnd="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="(kliknij słowo, aby obrócić)"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42dp" />
+        </RelativeLayout>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textColor="#FFFFFF"
+            android:alpha="0.85"
+            android:text="Następne"/>
+    </LinearLayout>
+
+</LinearLayout>
